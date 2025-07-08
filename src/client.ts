@@ -13,10 +13,10 @@ async function sendMessage() {
   await client.connect();
     client.emit('hello', { msg: 'Hello from client!' });
 
-  work queue
+  // work queue
     client.emit('process_task', {taskId: 123} );
 
-    RPC (Request-Reply) – Command-Driven
+    // RPC (Request-Reply) – Command-Driven
     client.send('get_user_details', 101).subscribe(response => {
     console.log('User details:', response);
   });
